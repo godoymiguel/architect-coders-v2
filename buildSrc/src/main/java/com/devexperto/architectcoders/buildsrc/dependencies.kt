@@ -15,6 +15,7 @@ object Libs {
         object Coroutines {
             private const val version = "1.6.0"
             const val core = "org.jetbrains.kotlinx:kotlinx-coroutines-core:$version"
+            const val test = "org.jetbrains.kotlinx:kotlinx-coroutines-test:$version"
         }
     }
 
@@ -61,6 +62,11 @@ object Libs {
                 const val core = "androidx.test.espresso:espresso-core:$version"
             }
         }
+
+        object Arch {
+            private const val version="2.1.0"
+            const val coreTesting = "androidx.arch.core:core-testing:$version"
+        }
     }
 
     object Glide {
@@ -105,4 +111,6 @@ object Libs {
     object JavaX {
         const val inject = "javax.inject:javax.inject:1"
     }
+
+    const val turbine = "app.cash.turbine:turbine:0.7.0"
 }
